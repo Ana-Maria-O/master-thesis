@@ -1,16 +1,16 @@
-    K = Kitsune(capture_pcap, packet_limit, maxAE_size, FMinstances, ADinstances)
-    
-    # List for packet features
-    features = []
-    
-    i = 0
+K = Kitsune(capture_pcap, packet_limit, maxAE_size, FMinstances, ADinstances)
 
-    # For each packet
-    while i < total_packets:
-        i +=1
+# List for packet features
+features = []
 
-        # Save the current packet's features
-        feature = K.return_feature()
+i = 0
 
-        # Append the feature vector to the list of feature vectors
-        features.append(feature)
+# For each packet
+while i < total_packets:
+    i +=1
+
+    # Save the current packet's features
+    feature = K.return_feature()
+
+    # Append the feature vector to the list of feature vectors
+    features.append(feature)
